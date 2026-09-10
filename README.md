@@ -325,7 +325,7 @@ These improvements are not included in the current implementation to keep the pr
 ## Demo Video
 
 ```text
-Demo Video: The project demonstration video has been attached along with the internship assessment submission email.
+Demo Video:  https://drive.google.com/file/d/1I348fNfVzplWClHr7Hc3_SBuiZmcdtFZ/view?usp=drive_link
 ```
 
 Acknowledgement :
