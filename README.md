@@ -119,8 +119,9 @@ Returns products where:
 quantity <= minStock
 ```
 
-### Project Structure
+## Project Structure
 
+```text
 inventory-management-system/
 │
 ├── backend/
@@ -148,6 +149,8 @@ inventory-management-system/
 │
 ├── .gitignore
 └── README.md
+```
+
 
 ### Backend Files
 
@@ -163,6 +166,116 @@ inventory-management-system/
 - `services/productService.js` — Contains frontend API request functions.
 - `App.jsx` — Manages the main application state, search, filtering, and API integration.
 - `main.jsx` — Entry point for the React application.
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd inventory-management-system
+```
+
+Replace `<repository-url>` with the actual GitHub repository URL.
+
+### 2. Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### 3. Install Frontend Dependencies
+
+Open another terminal from the project root:
+
+```bash
+cd frontend
+npm install
+```
+
+### 4. Start MongoDB
+
+Make sure your local MongoDB server is running.
+
+The application uses the following local database:
+
+```text
+mongodb://localhost:27017/inventory
+```
+
+The `inventory` database and product collection will be created when data is first stored.
+
+### 5. Create Backend Environment File
+
+Inside the `backend` folder, create a `.env` file:
+
+```env
+MONGO_URI=mongodb://localhost:27017/inventory
+PORT=5000
+```
+
+### 6. Create Frontend Environment File
+
+Inside the `frontend` folder, create a `.env` file:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+### 7. Start the Backend
+
+From the `backend` folder:
+
+```bash
+npm start
+```
+
+The backend should run at:
+
+```text
+http://localhost:5000
+```
+
+### 8. Start the Frontend
+
+From the `frontend` folder:
+
+```bash
+npm run dev
+```
+
+The frontend should run at the URL shown in the terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+### 9. Open the Application
+
+Open the frontend URL in a browser:
+
+```text
+http://localhost:5173
+```
+
+## Environment Variables
+
+### Backend `.env.example`
+
+```env
+MONGO_URI=mongodb://localhost:27017/inventory
+PORT=5000
+```
+
+### Frontend `.env.example`
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+Do not commit actual `.env` files to the repository.
+
 
 ## Validation and Error Handling
 
