@@ -119,6 +119,36 @@ Returns products where:
 quantity <= minStock
 ```
 
+### Project Structure
+
+inventory-management-system/
+│
+├── backend/
+│   ├── controllers/
+│   │   └── productController.js
+│   ├── models/
+│   │   └── Product.js
+│   ├── routes/
+│   │   └── productRoutes.js
+│   ├── .env.example
+│   ├── package.json
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ProductForm.jsx
+│   │   │   └── ProductList.jsx
+│   │   ├── services/
+│   │   │   └── productService.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   └── package.json
+│
+├── .gitignore
+└── README.md
+
 ### Backend Files
 
 - `models/Product.js` — Defines the Mongoose product schema.
